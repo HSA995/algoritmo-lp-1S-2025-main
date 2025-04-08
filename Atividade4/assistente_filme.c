@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 int main() {
+   //variáveis declaradas
    int tipoFilme;
    int escolhaLeve;
    int escolhaIntenso;
    int escolhaTerror;
    int escolhaAcao;
 
+   //Escolha entre leve ou intenso
    printf("Escolher tipo de filme:\n");
    printf("1 - leve\n");
    printf("2 - intenso\n");
