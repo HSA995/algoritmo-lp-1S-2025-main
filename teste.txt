@@ -1,0 +1,8 @@
+terminal 
+- gcc 
+- git clone https://github.com/HSA995/algoritmo-lp-1S-2025.git
+-ls      
+-.\ola.exe
+-code . 
+-git config user.name HSA995
+-git config user.email henriquesouto995
