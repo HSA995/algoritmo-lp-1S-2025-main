@@ -24,8 +24,7 @@ int main(int argc, char* argv[])
     {
     case 'c':
         printf("Circulo\n");
-        float calcular_area_circulo(float raio)
-        {
+        float calcular_area_circulo(float raio){
             return PI * raio * raio;
         }
         printf("Determinde o valor do raio:");
@@ -39,8 +38,7 @@ int main(int argc, char* argv[])
 
     case 'l':
         printf("Losangulo\n");
-        float calcular_area_losangulo(float diagonal_maior, float diagonal_menor)
-        {
+        float calcular_area_losangulo(float diagonal_maior, float diagonal_menor){
             return (diagonal_maior * diagonal_menor) / 2;
         }
         printf("Determina a diagonal_maior:");
