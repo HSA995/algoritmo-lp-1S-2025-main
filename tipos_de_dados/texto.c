@@ -46,9 +46,14 @@ int main(int argc, char* argv[]){
 
     //Imprime a palavra 3 ao contrario
     
-        for(int i = 0; i < strlen(palavra3); i++){
+        for(int i = strlen(palavra3); i >= 0; i--){
         printf("%c\n", palavra3[i]);
     }
+        fflush(stdin);
+
+    //Concatena palavra3 e palavra4
+    strcat(palavra3, palavra4);
+    printf("Palavra 3 concatenada = %s", palavra3);
     
 
     return 0;
