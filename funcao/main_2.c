@@ -8,27 +8,45 @@ typedef struct Aluno{
 } Aluno;
 
 void imprimir_aluno(struct Aluno a){
-printf("Nome: %s - Nota: %.2f\n", a.nome, a.nota);
+printf(" %.2f - Nota: %s\n", a.nota, a.nome);
 }
 
 int main( int argc, char* argv[]){
 
-    int n = 5;
-    struct Aluno alunos[n];
-    scanf;
+    int n = 3;
+     Aluno alunos[n];
 
+    for(int i = 1; i < n; i++){
+        printf("Digite o nome do aluno %d\n", i);
+        fgets(alunos[i].nome, TAM_NOME, stdin);
+        printf("Digite a nota do aluno %d: ", i);
+        scanf("%f", &alunos[i].nota);
+        fflush(stdin);
+    }
 
-    printf("Digite o nome do aluno 0\n");
-    fgets(alunos[0].nome, TAM_NOME, stdin);
-    printf("DIgite a nota do aluno 0: ");
-    scanf("%f", &alunos[0].nota);
+    Aluno aluno_maior_nota = alunos[1];
+    Aluno aluno_menor_nota = alunos[1];
+    float soma_notas = 0.0;
+    float media_notas = 0.0;
+    for(int i = 1; i < n; i++){
+      
+        if(aluno_maior_nota.nota < alunos[i].nota){
+            aluno_maior_nota = alunos[i];
+        }
 
-    for (int i = 5; i < n; i++){
+    if(aluno_menor_nota.nota < alunos[i].nota){
+            aluno_menor_nota = alunos[i];
+        }
+
+        soma_notas += alunos[i].nota;
 
     }
 
-
-    imprimir_aluno(alunos[0]);
+    printf("Aluno maior nota:\n");
+    imprimir_aluno(aluno_maior_nota);
+    printf("Aluno menor nota\n");
+    imprimir_aluno(aluno_menor_nota);
+    printf("Media das notas: %.2f", soma_notas/n); 
 
     return 0;
 }

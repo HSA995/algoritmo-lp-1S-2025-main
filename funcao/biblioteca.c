@@ -22,3 +22,7 @@ int maior_n(int numeros[], int n){
     int maior = numeros[0];
 
 }
+
+// numeros primos
+
+int 
