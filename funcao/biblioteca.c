@@ -25,4 +25,15 @@ int maior_n(int numeros[], int n){
 
 // numeros primos
 
-int 
+int  verificar_numero_primo(int n){
+
+    if((n % 2 == 0) && (n != 2)){
+        return 0;
+    }
+
+    for(int i = 3; i < n; i += 2){
+        if(n % i == 0){
+            return 0;
+        }
+    }
+}
