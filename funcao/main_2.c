@@ -14,7 +14,7 @@ printf(" %.2f - Nota: %s\n", a.nota, a.nome);
 int main( int argc, char* argv[]){
 
     int n = 3;
-     Aluno alunos[n];
+    Aluno alunos[n];
 
     for(int i = 1; i < n; i++){
         printf("Digite o nome do aluno %d\n", i);
@@ -29,7 +29,7 @@ int main( int argc, char* argv[]){
     float soma_notas = 0.0;
     float media_notas = 0.0;
     for(int i = 1; i < n; i++){
-      
+    
         if(aluno_maior_nota.nota < alunos[i].nota){
             aluno_maior_nota = alunos[i];
         }
